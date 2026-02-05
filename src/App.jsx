@@ -55,7 +55,7 @@ function Board({ xIsNext, squares, onPlay }) {
       // add the squares to the row
       boardRows = [
         ...boardRows, 
-        <div className="board-row">{rowSquares}</div>
+        <div className="board-row" key={`row-${i}`}>{rowSquares}</div>
       ];
       // reset
       rowSquares = [];
